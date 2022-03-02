@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CC3A62027CF48FA00DC0537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3A61F27CF48FA00DC0537 /* AppDelegate.swift */; };
+		7CC3A62227CF48FA00DC0537 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3A62127CF48FA00DC0537 /* SceneDelegate.swift */; };
+		7CC3A62927CF48FB00DC0537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC3A62827CF48FB00DC0537 /* Assets.xcassets */; };
+		7CC3A62C27CF48FB00DC0537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC3A62A27CF48FB00DC0537 /* LaunchScreen.storyboard */; };
+		7CC3A63B27CF493400DC0537 /* DiaryWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3A63327CF493400DC0537 /* DiaryWriteViewController.swift */; };
+		7CC3A63C27CF493400DC0537 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3A63427CF493400DC0537 /* HomeViewController.swift */; };
+		7CC3A63D27CF493400DC0537 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3A63527CF493400DC0537 /* TabBarViewController.swift */; };
+		7CC3A63F27CF493400DC0537 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3A63727CF493400DC0537 /* HomeCollectionViewCell.swift */; };
+		7CC3A64027CF493400DC0537 /* DiaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3A63827CF493400DC0537 /* DiaryDetailViewController.swift */; };
+		7CC3A64127CF493400DC0537 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3A63927CF493400DC0537 /* SavedViewController.swift */; };
+		7CC3A64227CF493400DC0537 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3A63A27CF493400DC0537 /* Diary.swift */; };
+		7CC3A64527CF497A00DC0537 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7CC3A64427CF497A00DC0537 /* Realm */; };
+		7CC3A64727CF497A00DC0537 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7CC3A64627CF497A00DC0537 /* RealmSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7CC3A61C27CF48FA00DC0537 /* MyDiaty+MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyDiaty+MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC3A61F27CF48FA00DC0537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CC3A62127CF48FA00DC0537 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7CC3A62827CF48FB00DC0537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CC3A62B27CF48FB00DC0537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CC3A62D27CF48FB00DC0537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC3A63327CF493400DC0537 /* DiaryWriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryWriteViewController.swift; sourceTree = "<group>"; };
+		7CC3A63427CF493400DC0537 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7CC3A63527CF493400DC0537 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		7CC3A63727CF493400DC0537 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		7CC3A63827CF493400DC0537 /* DiaryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryDetailViewController.swift; sourceTree = "<group>"; };
+		7CC3A63927CF493400DC0537 /* SavedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		7CC3A63A27CF493400DC0537 /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CC3A61927CF48FA00DC0537 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC3A64727CF497A00DC0537 /* RealmSwift in Frameworks */,
+				7CC3A64527CF497A00DC0537 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CC3A61327CF48FA00DC0537 = {
+			isa = PBXGroup;
+			children = (
+				7CC3A61E27CF48FA00DC0537 /* MyDiaty+MVC */,
+				7CC3A61D27CF48FA00DC0537 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CC3A61D27CF48FA00DC0537 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CC3A61C27CF48FA00DC0537 /* MyDiaty+MVC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CC3A61E27CF48FA00DC0537 /* MyDiaty+MVC */ = {
+			isa = PBXGroup;
+			children = (
+				7CC3A64927CF4AAC00DC0537 /* Model */,
+				7CC3A64827CF4A8B00DC0537 /* ViewController */,
+				7CC3A61F27CF48FA00DC0537 /* AppDelegate.swift */,
+				7CC3A62127CF48FA00DC0537 /* SceneDelegate.swift */,
+				7CC3A62827CF48FB00DC0537 /* Assets.xcassets */,
+				7CC3A62A27CF48FB00DC0537 /* LaunchScreen.storyboard */,
+				7CC3A62D27CF48FB00DC0537 /* Info.plist */,
+			);
+			path = "MyDiaty+MVC";
+			sourceTree = "<group>";
+		};
+		7CC3A64827CF4A8B00DC0537 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7CC3A63827CF493400DC0537 /* DiaryDetailViewController.swift */,
+				7CC3A63427CF493400DC0537 /* HomeViewController.swift */,
+				7CC3A63927CF493400DC0537 /* SavedViewController.swift */,
+				7CC3A63527CF493400DC0537 /* TabBarViewController.swift */,
+				7CC3A63327CF493400DC0537 /* DiaryWriteViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7CC3A64927CF4AAC00DC0537 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CC3A63A27CF493400DC0537 /* Diary.swift */,
+				7CC3A63727CF493400DC0537 /* HomeCollectionViewCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CC3A61B27CF48FA00DC0537 /* MyDiaty+MVC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC3A63027CF48FB00DC0537 /* Build configuration list for PBXNativeTarget "MyDiaty+MVC" */;
+			buildPhases = (
+				7CC3A61827CF48FA00DC0537 /* Sources */,
+				7CC3A61927CF48FA00DC0537 /* Frameworks */,
+				7CC3A61A27CF48FA00DC0537 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyDiaty+MVC";
+			packageProductDependencies = (
+				7CC3A64427CF497A00DC0537 /* Realm */,
+				7CC3A64627CF497A00DC0537 /* RealmSwift */,
+			);
+			productName = "MyDiaty+MVC";
+			productReference = 7CC3A61C27CF48FA00DC0537 /* MyDiaty+MVC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CC3A61427CF48FA00DC0537 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					7CC3A61B27CF48FA00DC0537 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 7CC3A61727CF48FA00DC0537 /* Build configuration list for PBXProject "MyDiaty+MVC" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CC3A61327CF48FA00DC0537;
+			packageReferences = (
+				7CC3A64327CF497A00DC0537 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 7CC3A61D27CF48FA00DC0537 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CC3A61B27CF48FA00DC0537 /* MyDiaty+MVC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CC3A61A27CF48FA00DC0537 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC3A62C27CF48FB00DC0537 /* LaunchScreen.storyboard in Resources */,
+				7CC3A62927CF48FB00DC0537 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CC3A61827CF48FA00DC0537 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC3A63F27CF493400DC0537 /* HomeCollectionViewCell.swift in Sources */,
+				7CC3A64227CF493400DC0537 /* Diary.swift in Sources */,
+				7CC3A63B27CF493400DC0537 /* DiaryWriteViewController.swift in Sources */,
+				7CC3A62027CF48FA00DC0537 /* AppDelegate.swift in Sources */,
+				7CC3A64127CF493400DC0537 /* SavedViewController.swift in Sources */,
+				7CC3A62227CF48FA00DC0537 /* SceneDelegate.swift in Sources */,
+				7CC3A64027CF493400DC0537 /* DiaryDetailViewController.swift in Sources */,
+				7CC3A63D27CF493400DC0537 /* TabBarViewController.swift in Sources */,
+				7CC3A63C27CF493400DC0537 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7CC3A62A27CF48FB00DC0537 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CC3A62B27CF48FB00DC0537 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CC3A62E27CF48FB00DC0537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7CC3A62F27CF48FB00DC0537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CC3A63127CF48FB00DC0537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6Y6MSA68D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MyDiaty+MVC/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.MyDiaty-MVC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CC3A63227CF48FB00DC0537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6Y6MSA68D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MyDiaty+MVC/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.MyDiaty-MVC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CC3A61727CF48FA00DC0537 /* Build configuration list for PBXProject "MyDiaty+MVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC3A62E27CF48FB00DC0537 /* Debug */,
+				7CC3A62F27CF48FB00DC0537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CC3A63027CF48FB00DC0537 /* Build configuration list for PBXNativeTarget "MyDiaty+MVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC3A63127CF48FB00DC0537 /* Debug */,
+				7CC3A63227CF48FB00DC0537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7CC3A64327CF497A00DC0537 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7CC3A64427CF497A00DC0537 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CC3A64327CF497A00DC0537 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		7CC3A64627CF497A00DC0537 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CC3A64327CF497A00DC0537 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7CC3A61427CF48FA00DC0537 /* Project object */;
+}

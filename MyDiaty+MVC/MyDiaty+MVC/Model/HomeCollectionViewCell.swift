@@ -26,9 +26,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
     // MARK: - Handlers
     private func setup(){
       backgroundColor = .blue
-      label.text = "cell"
       label.textAlignment = .center
-//      label.backgroundColor = .purple
     }
     
     private func addViews(){
